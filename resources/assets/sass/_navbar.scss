@@ -1,0 +1,27 @@
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .active > .nav-link,{
+	color: $brand-info;
+	text-transform: uppercase;
+  font-family: 'Gotham-Medium';
+  font-size: .78em;
+
+}
+
+.navbar-light{
+    background: white;
+    color: $brand-info;
+}
+@include media-breakpoint-up(sm) {
+  .navbar-light{
+    height: 140px;}
+  .Nav {
+    margin-top: 50px;
+  }
+  .nav-link{
+  	margin:0 27px;
+  }
+
+  .nav-item:first-child{
+    margin-left: 30px; 
+  }
+}
