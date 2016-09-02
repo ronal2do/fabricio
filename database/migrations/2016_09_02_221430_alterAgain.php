@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AlterUser extends Migration
+class AlterAgain extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class AlterUser extends Migration
      public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->boolean('admin')->default(1);
+            $table->boolean('admin')->default(0);
         });
     }
 
