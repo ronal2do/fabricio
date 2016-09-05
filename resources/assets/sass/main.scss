@@ -62,10 +62,14 @@ p.bio{
     font-size: .6em;
     color:#0F4764;
 }
+a.btn.btn-primary,
+a.btn.btn-warning.btn-header,
 a.btn.btn-warning.btn-todos {
     padding: 16px;
 }
-
+.banner{
+  height:555px; background-image:url('../img/bannermob.jpeg'); background-size:cover;background-position:center;
+}
 @include media-breakpoint-up(sm) { 
  .btn{
  	height: 56px;
@@ -84,6 +88,9 @@ a.btn.btn-warning.btn-todos {
   }
   footer{
 	height: 70px;
+  }
+  .banner{
+    height:555px; background-image:url('../img/banner.png'); background-size:cover;background-position:center;
   }
 }
 a.navbar-brand {
@@ -180,3 +187,4 @@ footer{
   background-image: url('../img/dot.png');
   background-repeat: repeat;
 }
+@import "sweetalert";

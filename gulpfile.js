@@ -16,10 +16,12 @@ elixir(function(mix) {
     mix.scripts([
 		'vendor/modernizr-2.8.3.min.js',
 		'vendor/bootstrap.min.js',
+
+		'vendor/sweetalert.min.js',
 		'bootstrap-datepicker.js',
 		'vendor/owl.carousel.min.js',
-		'plugins.js'
-    	], 'public/js/main.js');
+		'main.js'
+    	], 'public/js/app.js');
 });
 
 

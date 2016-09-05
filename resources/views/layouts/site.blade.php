@@ -1,5 +1,10 @@
-<!doctype html>
-<html class="no-js" lang="">
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<!--[if IE 7 ]> <html lang="pt-BR" class="ie7">    <![endif]-->
+<!--[if IE 8 ]>    <html lang="pt-BR" class="ie8">    <![endif]-->
+<!--[if IE 9 ]>    <html lang="pt-BR" class="ie9">    <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="pt-BR"><!--<![endif]-->
+<html lang="pt-BR" ng-app="balneario">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -119,21 +124,14 @@
 
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
+<script src="js/angular.min.js"></script>
+<script src="js/ngMask.min.js"></script>
+<script src="js/sweetalert.min.js"></script>
+<script src="js/app.js"></script>
 <script src="js/main.js"></script>
 
-<script>
-    var owl = jQuery('.owl-carousel');
-    jQuery('.owl-carousel').owlCarousel({
-        items:4,
-        loop:true,
-        margin:10,
-        autoplay:true,
-        autoplayTimeout:4000,
-        autoplayHoverPause:true
-    });
-</script>
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>
@@ -144,5 +142,7 @@
         r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
     ga('create','UA-XXXXX-X','auto');ga('send','pageview');
 </script>
+    <!-- Include this after the sweet alert js file -->
+    @include('sweet::alert')
 </body>
 </html>

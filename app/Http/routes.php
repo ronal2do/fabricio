@@ -28,4 +28,6 @@ Route::get('usuarios', 'HomeController@getUsers');
 Route::get('/{id}/set', 'HomeController@set');
 Route::get('/{id}/deluser', 'HomeController@deletaUser');
 
-Route::get('/download', 'WelcomeController@getDownload');
+Route::get('/baixar', 'WelcomeController@getDownload');
+
+Route::resource('/ideia', 'IdeiaController@store');

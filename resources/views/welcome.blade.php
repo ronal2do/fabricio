@@ -3,8 +3,7 @@
 @section('content')
 
     <section class="header">
-        <div class="banner" style="height:555px; background-image:url('./img/banner.png'); background-size:cover;background-position:center;">
-
+        <div class="banner" style="">
         </div>
 
         <div class="plano">
@@ -26,7 +25,7 @@
                 <div class="col-md-2">
 
                     <div class="text-sm-center">
-                        <button class="btn btn-warning btn-header">download</button>  
+                        <a href="/baixar" class="btn btn-warning btn-header">download</a>  
                     </div>
 
                 </div>
@@ -37,31 +36,69 @@
 
     <section class="ideias">
         <div class="container">
-            <div class="col-sm-5">
-                <img src="./img/fabricio_square.png" alt="" style="max-width:100%;">
+           <div class="tab-content" id="myTabContent"> 
+                <div class="tab-pane fade in active" role="tabpanel" id="home">
+                @include('includes.tab')
+                </div>
+
+                <div class="tab-pane fade" role="tabpanel" id="eixos">
+                   
+                      
+                        <h2 class="h2">A QUEDA DO MURO</h2>
+                        <h3 class="Eixo__sub">Cidade unificada</h3>
+                        <p >A cidade que vamos construir juntos será unificada em tratamento e em benefícios de forma igualitária, com investimentos, obras e políticas públicas que atendam a todos os bairros. A divisão entre centro, beira-mar e bairros que atualmente existe, vai acabar, implementaremos uma gestão para uma cidade única.
+                        </p>
+             
+                        <h2 class="h2">GOVERNO DECENTE </h2>
+                        <h3 class="Eixo__sub">Gestão Moderna, Eficaz, Transparente e junto das Pessoas</h3>
+                        <p >
+                            A cidade será administrada de forma plural, governo e sociedade. Uma gestão pública moderna e eficaz, amparada pela tecnologia e focada na funcionalidade, planejando uma Balneário para os próximos 20 anos. Um governo transparente que garantirá o acesso público à informação, focado em profissionalização, meritocracia, capacitação e valorização do quadro de servidores municipais.
+                        </p>
+         
+                        <h2 class="h2">TODOS SOMOS BALNEÁRIO</h2>
+                        <h3 class="Eixo__sub">Cuidar da cidade é cuidar das pessoas</h3>
+                        <p >Além de investimentos habituais em obras e em políticas públicas que fortalecem a infraestrutura e a prestação de serviços à população, teremos algo a mais: o compromisso em cuidar e atender bem às pessoas. As áreas de Educação, Saúde, Acessibilidade e Segurança demandam atenção especial, com ferramentas de tecnologia e modernização da gestão. A cidade não pode mais perder recursos estaduais e federais nessas áreas.
+                        </p>
+                   
+       
+                        <h2 class="h2">BALNEÁRIO DE ÁGUAS LIMPAS</h2>
+                        <h3 class="Eixo__sub">Cidade Desenvolvida e Sustentável</h3>
+                        <p >
+                            Desenvolvimento econômico e cidade sustentável, onde o poder público e a iniciativa privada caminhem juntos, com responsabilidade social e ambiental, construindo um futuro saudável das gerações. Nossa cidade necessita de saneamento básico de padrão internacional, água e praias limpas. Nosso pulmão verde do Interpraias pode ser explorado de forma consciente. Nova matriz econômica é uma necessidade, tecnologia é uma oportunidade, nossa gente em nossas universidades deve fazer parte da construção desse novo modelo. Atrair riqueza o ano todo com uma cidade de referências positivas é fundamental, turismo de inverno e grandes eventos culturais, esportivos, de lazer e corporativos são necessidades para o desenvolvimento da cidade. 
+                        </p>
+                        <p class="Eixo__destaque">
+                            Vamos construir a Balneário que queremos para os próximos 20 anos.
+                        </p>
+                        <p class="Eixo__destaque">
+                            Fabrício Oliveira <br>
+                                Presidente do PSB/BC
+                        </p>
+
+                 
+                </div>
+
+                <div class="tab-pane fade" role="tabpanel" id="form">
+                    <div class="col-sm-5">
+                        <img src="./img/fabricio_square.png" alt="" style="max-width:100%;">
+                    </div>
+                    <div class="col-sm-7">
+                        @include('includes.form')
+                    </div>
+                </div>
+
             </div>
-            <div class="col-sm-7">
-                <h2 class="h2">NOVAS IDEIAS PARA UMA SÓ BALNEÁRIO.</h2>
-                <p class="bio">
-                    Todos temos orgulho do nosso mar e do nosso 
-                    verde deslumbrantes, das conquistas que fazem 
-                    da nossa cidade um destino turístico de padrão 
-                    internacional. A realidade em muitos bairros, 
-                    contudo, é diferente, sem serviços, sem benfeitorias, sem infraestrutura. E quer saber uma verdade? Temos condições para fazer de Balneário uma 
-                    só cidade, com obras e recursos chegando a todos os bairros, o ano todo. E ir além, com obras e e
-                    stratégias que pensem nossos próximos 20 anos. Porque quando uma cidade cresce por inteiro 
-                    e olha para frente, todos ganham.
-                </p>
-            </div>
+
             <div class="col-sm-12 text-sm-center">
                 <br>
                 <br>
-                <button class="btn btn-primary">novas ideias</button>
-                <button class="btn btn-primary">eixos</button>
-                <button class="btn btn-primary">suas ideias</button>
+
+                <a data-toggle="tab" href="#home" class="btn btn-primary">novas ideias</a>
+                <a data-toggle="tab" href="#eixos" class="btn btn-primary">eixos</a>
+                <a data-toggle="tab" href="#form" class="btn btn-primary">suas ideias</a>
             </div>
         </div>
     </section>
+
 
     <section class="biografia">
         <div class="container-fluid" style="max-width:1400px;">
