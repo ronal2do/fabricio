@@ -25,7 +25,7 @@
                 <div class="col-md-2">
 
                     <div class="text-sm-center">
-                        <a href="/baixar" class="btn btn-warning btn-header">download</a>  
+                        <a href="#" class="btn btn-warning btn-header">download</a>  
                     </div>
 
                 </div>
