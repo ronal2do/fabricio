@@ -73,6 +73,7 @@ a.btn.btn-warning.btn-todos {
 @include media-breakpoint-up(sm) { 
  section.header{
   padding-top:140px;
+  border-bottom: 1px solid #e9ebef;
 }
  .btn{
  	height: 56px;
