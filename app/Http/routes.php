@@ -4,7 +4,7 @@ Route::get('/', function () {
 	$videos = \App\Video::orderBy('id', 'DESC')->get();
 	$destaque = \App\Video::orderBy('id', 'DESC')->take(1)->get();
 
-	$agendas = \App\Agenda::orderBy('data')->whereRaw('data >= curdate()')->get();
+	$agendas = \App\Agenda::orderBy('data')->whereRaw('data >= curdate()')->orderBy('hora')->get();
 
     return view('welcome', compact('videos', 'agendas', 'destaque'));
 });
@@ -20,6 +20,7 @@ Route::get('/home', 'HomeController@index');
 
 Route::post('/criaragenda', 'HomeController@criarAgenda');
 Route::get('/{id}/deletar', 'HomeController@deletaAgenda');
+Route::get('/{id}/editar', 'HomeController@editaAgenda');
 
 Route::post('/criarvideo', 'HomeController@criarVideo');
 Route::get('/{id}/delvideo', 'HomeController@deletaVideo');

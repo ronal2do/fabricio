@@ -29,7 +29,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $agendas = Agenda::orderBy('data')->get();
+        $agendas = Agenda::orderBy('data')->whereRaw('data >= curdate()')->orderBy('hora')->get();
 
         $videos = Video::get();
 
