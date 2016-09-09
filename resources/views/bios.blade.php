@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <div class="plano">
+    <div class="plano biografias">
         <div class="container">
 
                 <div class="frase">
