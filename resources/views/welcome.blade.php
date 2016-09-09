@@ -163,6 +163,7 @@
                 <div class="artigo">
                     <h3 class="h3">Dia {{ date('d/m ', strtotime($a->data)) }} 
                     @if( $a->data == null || $a->data == '' ) 
+                    
                     @else
                     a partir das {{$a->hora}}h 
                     @endif
