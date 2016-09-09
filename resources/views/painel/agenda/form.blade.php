@@ -19,7 +19,7 @@
   <div class="form-group">
     <label class="control-label col-sm-2" for="hora">Hora:</label>
     <div class="col-sm-10"> 
-        <input id="hora" type="text" class="form-control" name="hora">
+        <input id="hora" type="text" class="form-control" name="hora" placeholder="ex.: 08:00, 13:00 ou 14:30">
     </div>
   </div>
 
