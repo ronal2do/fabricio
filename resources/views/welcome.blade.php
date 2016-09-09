@@ -161,7 +161,7 @@
             @if($agendas->count() > 0)
                 @foreach($agendas as $a)
                 <div class="artigo">
-                    <h3 class="h3">Dia {{ date('d/m ', strtotime($a->data)) }} @if($a->data) a partir das {{$a->hora}}h @endif</h3>
+                    <h3 class="h3">Dia {{ date('d/m ', strtotime($a->data)) }} @if( $a->data != null | $a->data != '' ) a partir das {{$a->hora}}h @endif</h3>
                     <h4 class="h4">{{$a->titulo}}</h4>
                     <p>{{$a->detalhes}}</p>
                 </div>
