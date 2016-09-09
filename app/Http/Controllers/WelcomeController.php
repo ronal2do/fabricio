@@ -10,10 +10,10 @@ class WelcomeController extends Controller
 {
 	public function getDownload()
     {
-        $file= public_path(). "/download/Fabricio-Programa-Governo-Web.pdf";
+        $file= public_path(). "/download/Fabricio-plano-de-cidade-Web.pdf";
         $headers = array(
                   'Content-Type: application/pdf',
                 );
-        return response()->download($file, 'PlanodeGoverno_Fabricio.pdf', $headers);
+        return response()->download($file, 'Fabricio-plano-de-cidade-Web.pdf', $headers);
     }
 }
