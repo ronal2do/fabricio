@@ -23,7 +23,7 @@
 <!--[if lt IE 8]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
-<nav class="navbar navbar-light">
+<nav class="navbar navbar-light navbar-fixed-top">
   <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2" aria-controls="exCollapsingNavbar2" aria-expanded="false" aria-label="Toggle navigation">
     &#9776;
   </button>
@@ -41,8 +41,11 @@
             <a class="nav-link" href="/#videos">Vídeos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/">Fotos</a>
+            <a class="nav-link" href="/#agenda">Agenda</a>
           </li>
+         <!--  <li class="nav-item">
+            <a class="nav-link" href="/">Fotos</a>
+          </li> -->
         </ul>
 
         <ul class="nav navbar-nav pull-xs-right">

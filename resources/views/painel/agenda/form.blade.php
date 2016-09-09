@@ -17,6 +17,13 @@
   </div>
 
   <div class="form-group">
+    <label class="control-label col-sm-2" for="hora">Hora:</label>
+    <div class="col-sm-10"> 
+        <input id="hora" type="text" class="form-control" name="hora">
+    </div>
+  </div>
+
+  <div class="form-group">
     <label class="control-label col-sm-2" for="detalhes">Detalhes:</label>
     <div class="col-sm-10"> 
       <textarea type="text" class="form-control" id="detalhes" name="detalhes" placeholder="Detalhes" ></textarea>

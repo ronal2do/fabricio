@@ -25,7 +25,7 @@
                 <div class="col-md-2">
 
                     <div class="text-sm-center">
-                        <a href="#" class="btn btn-warning btn-header">download</a>  
+                        <a href="/baixar" class="btn btn-warning btn-header">download</a>  
                     </div>
 
                 </div>
@@ -108,7 +108,7 @@
         </div>
     </section>
 
-    <section class="agenda">
+    <section class="agenda" id="agenda">
         <div class="container">
             <h1 class="h1">Agenda 
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -161,7 +161,7 @@
             @if($agendas->count() > 0)
                 @foreach($agendas as $a)
                 <div class="artigo">
-                    <h3 class="h3">Dia {{ date('d/m ', strtotime($a->data)) }}</h3>
+                    <h3 class="h3">Dia {{ date('d/m ', strtotime($a->data)) }} @if($a->data) a partir das {{$a->hora}}h @endif</h3>
                     <h4 class="h4">{{$a->titulo}}</h4>
                     <p>{{$a->detalhes}}</p>
                 </div>

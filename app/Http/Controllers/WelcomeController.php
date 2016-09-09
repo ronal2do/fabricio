@@ -10,7 +10,7 @@ class WelcomeController extends Controller
 {
 	public function getDownload()
     {
-        $file= public_path(). "/download/PlanodeGoverno_Fabricio_A5-2.pdf";
+        $file= public_path(). "/download/Fabricio-Programa-Governo-Web.pdf";
         $headers = array(
                   'Content-Type: application/pdf',
                 );
