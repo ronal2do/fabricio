@@ -71,7 +71,9 @@ a.btn.btn-warning.btn-todos {
   height:555px; background-image:url('../img/bannermob.jpeg'); background-size:cover;background-position:center;
 }
 @include media-breakpoint-up(sm) { 
-  section.header{padding-top:140px;}
+ section.header{
+  padding-top:140px;
+}
  .btn{
  	height: 56px;
  	width: 206px;
