@@ -169,7 +169,7 @@
                             @endif 
                         {{$a->hora}}h @endif
                     </h4>
-                    <p>{{$a->local}}</p>
+                    <p>Local: {{$a->local}}</p>
                     <p>{{$a->detalhes}}</p>
                 </div>
                 @endforeach
