@@ -8,6 +8,8 @@ class Agenda extends Model
         'titulo', 
         'data', 
         'hora', 
+        'partir', 
+        'local', 
         'detalhes'
     ];
 }

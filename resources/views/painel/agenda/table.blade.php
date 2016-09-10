@@ -18,7 +18,6 @@
         @if ( Auth::user()->admin )
             <a href="/{{ $a->id }}/editar"><i class="glyphicon glyphicon-pen"></i></a>
             <a href="/{{ $a->id }}/deletar"><i class="glyphicon glyphicon-trash"></i></a>
-      
         @endif       
         </td>
    

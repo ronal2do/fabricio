@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AlterAgain extends Migration
+class AlterAgendaPartir extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,8 @@ class AlterAgain extends Migration
     public function up()
     {
         Schema::table('agendas', function ($table) {       
-            $table->string('hora')->change();
+            $table->string('partir')->default(0);
+            $table->string('local')->nullable();
         });
     }
 

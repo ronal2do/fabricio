@@ -19,7 +19,21 @@
   <div class="form-group">
     <label class="control-label col-sm-2" for="hora">Hora:</label>
     <div class="col-sm-10"> 
-        <input id="hora" type="text" class="form-control" name="hora" placeholder="ex.: 08:00, 13:00 ou 14:30">
+        <input type="text" class="form-control" name="hora" placeholder="ex.: 08:00, 13:00 ou 14:30">
+    </div>
+  </div>
+
+ <div class="form-group">
+    <label class="control-label col-sm-2" for="partir"></label>
+    <div class="col-sm-10"> 
+         <label><input type="checkbox" name="partir" > colocar o <span style=""> a partir das</span></label>
+    </div>
+  </div>
+
+<div class="form-group">
+    <label class="control-label col-sm-2" for="local">Local:</label>
+    <div class="col-sm-10"> 
+        <input type="text" class="form-control" name="local" placeholder="Endereço">
     </div>
   </div>
 
