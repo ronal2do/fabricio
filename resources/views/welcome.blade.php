@@ -169,8 +169,8 @@
                             @endif 
                         {{$a->hora}}h @endif
                     </h4>
-                    <p>Local: {{$a->local}}</p>
-                    <p>{{$a->detalhes}}</p>
+                    @if ($a->local) <p>Local: {{$a->local}}</p> @endif
+                    @if ($a->detalhes) <p>{{$a->detalhes}}</p> @endif
                 </div>
                 @endforeach
             @else
