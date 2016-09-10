@@ -4,7 +4,6 @@
 	text-transform: uppercase;
   font-family: 'Gotham-Medium';
   font-size: .78em;
-
 }
 
 .navbar-light{
@@ -13,7 +12,8 @@
 }
 @include media-breakpoint-up(sm) {
   .navbar-light{
-    height: 140px;}
+    height: 140px;
+    border-bottom: 1px solid #e7e8ea;}
   .Nav {
     margin-top: 50px;
   }

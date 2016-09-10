@@ -4727,7 +4727,8 @@ a.text-danger:focus, a.text-danger:hover {
 
 @media (min-width: 544px) {
   .navbar-light {
-    height: 140px; }
+    height: 140px;
+    border-bottom: 1px solid #e7e8ea; }
   .Nav {
     margin-top: 50px; }
   .nav-link {
