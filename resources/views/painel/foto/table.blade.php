@@ -16,8 +16,7 @@
         <td>{{ $p->description }}</td>     
         <td>
         @if ( Auth::user()->admin )
-            <a href="/{{ $p->id }}/editar"><i class="glyphicon glyphicon-pen"></i></a>
-            <a href="/{{ $p->id }}/deletar"><i class="glyphicon glyphicon-trash"></i></a>
+            <a href="/{{ $p->id }}/photos"><i class="glyphicon glyphicon-trash"></i></a>
         @endif       
         </td>
    
