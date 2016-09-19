@@ -4,7 +4,7 @@
   <div class="form-group">
     <label class="control-label col-sm-2" for="name">Título:</label>
     <div class="col-sm-10">
-      <input type="text" class="form-control" name="name" placeholder="Título da imagem">
+      <input type="text" class="form-control" name="name" placeholder="Nome da imagem evite usar espaços e acentuação.">
     </div>
   </div>
 

@@ -5083,6 +5083,9 @@ footer {
   /* margin-bottom: 1rem; */
   border-radius: 0.25rem; }
 
+ul {
+  list-style-type: none; }
+
 body.stop-scrolling {
   height: 100%;
   overflow: hidden; }
