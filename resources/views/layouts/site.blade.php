@@ -15,6 +15,8 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+    <link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
 
     <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
@@ -43,9 +45,9 @@
           <li class="nav-item">
             <a class="nav-link" href="/#agenda">Agenda</a>
           </li>
-         <!--  <li class="nav-item">
-            <a class="nav-link" href="/">Fotos</a>
-          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="/fotos">Fotos</a>
+          </li>
         </ul>
 
         <ul class="nav navbar-nav pull-xs-right">
@@ -128,6 +130,8 @@
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+<!-- <script src="js/bootstrap-image-gallery.min.js"></script> -->
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/angular.min.js"></script>
 <script src="js/ngMask.min.js"></script>

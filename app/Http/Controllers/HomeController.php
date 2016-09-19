@@ -9,6 +9,7 @@ use Illuminate\Http\Response;
 use App\Agenda;
 use App\User;
 use App\Video;
+use App\Photo;
 
 class HomeController extends Controller
 {
@@ -65,6 +66,54 @@ class HomeController extends Controller
         return redirect()->back();
         return view('home');       
     }
+
+    public function getPhotos()
+    {
+        $photos = Photo::get();
+        return view('photos', compact('photos'));
+    }
+
+    public function criarPhoto(Request $request)
+    {
+         // getting all of the post data
+          $file = array('image' => $request->file('image'));
+          // setting up rules
+          $rules = array('image' => 'required',); //mimes:jpeg,bmp,png and for max size max:10000
+          // doing the validation, passing post data, rules and the messages
+
+          // dd($file);
+            // checking file is valid.
+            if ($request->file('image')->isValid()) {
+              $dados = $request->all();
+
+              $destinationPath = 'uploads'; // upload path
+              $extension = $request->file('image')->getClientOriginalExtension(); // getting image extension
+              $fileName = $request->name.'.png'; // renameing image
+              $request->file('image')->move($destinationPath, $fileName); // uploading file to given path
+
+              $dados = $request->all();
+                // name = $fileName
+
+              Photo::create($dados);
+              return redirect()->back();
+              return view('photos');
+            }
+            else {
+
+                return redirect()->back();
+                return view('photos');
+            }
+     
+    }
+
+    public function deletaPhoto($id)
+    {
+        $c = Photo::findOrFail($id);
+        $c->delete();
+        return redirect()->back();
+        return view('photos');       
+    }
+
 
     public function getUsers()
     {

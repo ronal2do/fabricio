@@ -28,6 +28,10 @@ Route::get('/{id}/editar', 'HomeController@editaAgenda');
 Route::post('/criarvideo', 'HomeController@criarVideo');
 Route::get('/{id}/delvideo', 'HomeController@deletaVideo');
 
+Route::get('/photos', 'HomeController@getPhotos');
+Route::post('/photos', 'HomeController@criarPhoto');
+Route::get('/{id}/photos', 'HomeController@deletaPhoto');
+
 Route::get('usuarios', 'HomeController@getUsers');
 Route::get('/{id}/set', 'HomeController@set');
 Route::get('/{id}/deluser', 'HomeController@deletaUser');

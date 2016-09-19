@@ -1,0 +1,36 @@
+   .padding{
+        padding-top: 45px;
+    }
+    .img-thumb {
+        overflow: hidden;
+    /*height: 127px;*/
+        margin-bottom: 30px;
+    }
+    .thumbnail>img {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .thumbnail>img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+    .thumbnail {
+        display: block;
+        padding: 4px;
+        margin-bottom: 20px;
+        line-height: 1.42857143;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        -webkit-transition: border .2s ease-in-out;
+        -o-transition: border .2s ease-in-out;
+        transition: border .2s ease-in-out;
+    }
+    a.thumbnail:hover {
+        border-color: #337ab7;
+    }
+     a:hover {
+        color: #23527c;
+        text-decoration: underline;
+    }

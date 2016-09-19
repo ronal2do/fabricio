@@ -53,6 +53,7 @@
                 @else
                     @if ( Auth::user()->admin )
                         <li><a href="{{ url('/usuarios') }}">Usuários</a></li>
+                        <li><a href="{{ url('/photos') }}">Fotos</a></li>
                     @endif
                 @endif
                 </ul>
