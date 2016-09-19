@@ -12,6 +12,9 @@ Route::get('/', function () {
 Route::get('/biografias', function () {
     return view('bios');
 });
+Route::get('/fotos', 'FotosController@index');
+
+
 Route::auth();
 
 Route::get('/home', 'HomeController@index');
