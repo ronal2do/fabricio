@@ -46,7 +46,7 @@
                     @foreach($photos as $p)
                     <div class="col-lg-3 col-md-4 col-xs-6 img-thumb">
                         <a class="thumbnail" href="/uploads/{{$p->name}}.png" data-gallery>
-                            <img class="img-responsive" src="/uploads/{{$p->name}}.png" alt="">
+                            <img class="img-responsive" src="/uploads/{{$p->name}}.png" alt="{{$p->name}}">
                         </a>
                         @if($p->location)<p>{{$p->location}}</p>@endif
                         @if($p->description)<p>{{$p->description}}</p>@endif
